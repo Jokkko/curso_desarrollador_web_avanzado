@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* Ejemplo para $ */
+    background-color: #ddf;
+}
+
+.background {
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: crimson;
+    width: 1000px;
+    height: 800px;
+}
+
+.background-1 {
+    background-color: green;
+    background-image: url('/background/img/paisaje.jpg');
+    /* background-repeat: repeat; DEFAULT: repeat */
+    /* background-repeat: repeat-x; REPITE: horizontalmente
+    background-repeat: repeat-y; REPITE: verticalmente*/
+    background-repeat: no-repeat;
+}
+
+.background-2{
+    background-color: blue;
+    background-image: url('/background/img/paisaje.jpg'), url('/background/img/celular.jpg'), url('/background/img/chocolate.jpg');
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: top left, bottom right, center;
+    background-size: 600px auto, 600px auto, 600px auto;
+}
+
+
+.background-3{
+    background-color: violet;
+    background-image: url('/background/img/candies.jpg');
+    background-repeat: no-repeat;
+    /* background-size: contain; Estira la imagen para que el contenedor contenga toda la imagen, sin deformar la imagen*/
+    /* background-size: cover; Estira la imagen para que tape todo el contenedor sin deformar la imagen manteniendo la proporcion*/
+}
+
+.background-4{
+    background-color: blue;
+    
+    background-image: 
+        linear-gradient(
+            15deg,
+            rgba(220, 211, 208, 0.162),
+            rgba(0, 0, 0, 0.373)
+        ), /* to left,  to right, to top, to bottom, 45deg, 60deg, 180deg, 360deg, */
+        url('/background/img/calle.jpg');
+
+    background-repeat: no-repeat;   
+    background-size: cover;    
+    background-position: center;
+}

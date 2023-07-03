@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.box{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2px;
+}
+
+.sin-box-sizing{
+    box-sizing: content-box; /* Valor default */
+    background-color: gray;
+    padding-left: 30px;
+    width: 260px;
+    padding-top: 30px;
+    height: 260;
+    border: 5px solid black;
+}
+
+/* Si coloco border-box en box-sizing me evito cuentas en padding y en border */
+.con-box-sizing{
+    box-sizing: border-box;
+    padding-right: 25px;
+    border: 5px solid black;
+    background-color: yellow;
+}
