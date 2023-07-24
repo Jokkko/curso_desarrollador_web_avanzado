@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudoclases</title>
+  </head>
+  <body>
+
+    <div class="contenedor">
+
+      <h1>Pseudoclases</h1>
+
+      <p>Selectores en css que nos permiten aplicar estilos a elementos especificos en ciertos estados o condiciones las pseudoclases se aniaden  a los selectores css (.clase, #id, etiqueta) se le agrega la pseudo clase (.clase:pseudoclase, #id:pseudoclase, etiqueta:pseudoclase)</p> 
+  
+      <hr class="margin-top-20">
+      <hr>
+
+      <div class="grupo">
+        <h2>:first-child / :last-child</h2>
+        <div class="parrafos">
+          <p>Soy el primer parrafo</p>
+          <p>Soy el segundo parrafo</p>
+          <p>Soy el tercer parrafo</p>
+        </div>
+      </div> <!-- .grupo -->
+
+      <div class="grupo">
+        <h2>first-of-type / :last-of-type</h2>
+        <div class="elementos">
+          <div>Hola soy un div</div>
+          <p>Soy el primer parrafo</p>
+          <span>Hola soy un span</span>
+          <p>Soy el segundo parrafo</p>
+          <div>Hola soy un div</div>
+        </div><!-- .elementos -->
+      </div><!-- .grupo -->
+
+
+      <div class="grupo">
+        <h2>:nth-child() / :nth-last-child()</h2>
+        <ul class="lista">
+          <li>soy la opcion #01</li>
+          <li>soy la opcion #02</li>
+          <li>soy la opcion #03</li>
+          <li>soy la opcion #04</li>
+          <li>soy la opcion #05</li>
+          <li>soy la opcion #06</li>
+          <li>soy la opcion #07</li>
+          <li>soy la opcion #08</li>
+        </ul>
+      </div><!-- .grupo -->
+
+
+      <div class="grupo">
+        <h2>:nth-of-type / :nth-last-of-type</h2>
+        <div class="lista-b">
+          <div>SOY UN DIV</div>
+          <p>Yo soy un p</p>
+          <p>Yo tambien</p>
+          <span>Yo soy un span</span>
+          <p>Soy otro p</p>
+          <div>El segundo div</div>
+        </div>
+      </div><!-- .grupo -->
+
+    </div> <!-- .contenedor -->
+
+  <script type="module" src="/main.js"></script>
+  </body>
+</html>

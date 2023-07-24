@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/* 
+.contenedor{
+    display: flex;
+    height: 100vh;
+    
+} */
+
+.clip-path{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(crimson,orange);
+    float: left;
+    margin: 20px;
+}
+
+.clip-path--1{
+        /* radio at X Y */
+        /* clip-path: circle(50%); */ /* 200px */
+        clip-path: circle(50% at right);
+}
+
+.clip-path--2{
+    /* radio at X Y */
+    /* clip-path: circle(50%); */ /* 200px */
+    clip-path: circle(50% at left);
+}
+
+.clip-path--3{
+                    /* radioX radioY at X Y */
+    clip-path: ellipse(40% 20% at center center);
+}
+
+.clip-path--4{
+                        /* inset(x1 y1 x2 y2) */
+    clip-path: inset(20px 20px 21px 22px round 40px);
+}
+
+.clip-path--5{
+    /* polygon(x1 y1, x2 y2, x3 y3, xn yn) */
+    clip-path: ellipse(99% 59% at 54% 52%);
+}

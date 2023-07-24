@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Propiedades para mobile */
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: red;
+}
+
+h1{
+    background-color: black;
+    color: red;
+    border: solid brown 3px;
+    font-size: 60px;
+}
+
+h2{
+    background-color: black;
+}
+
+ul,p{
+    font-size: 30px;
+}
+
+/* Media querie (Me permiten modificar la interfaz web basado en el dispositivo o tamaño del viewport del dispositivo) */
+
+/* Consulta en que dispositivo se encuentra. aplica esta hoja de estilos */
+@media print {
+    body{
+        background-color: black;    
+    }
+    h1{
+        background: none;
+    }
+    h2{
+        background: none;
+    }
+}
+
+/* media queries: Para los diferentes dispositivos de pantalla */
+
+/* 
+    Media queries para distintos dispositivos (BreakPoints):
+   
+    !sitio responsive economico: (2 media queries)
+    Dispositivos Pequeños <576px (Mobile)
+    Dispositivos Largos >1200px (Desktop)
+
+    !sitio responsive minimo: (3 media queries)
+    Dispositivos Pequeños <576px (Mobile)
+    Dispositivos Medianos >768px (Tablet)
+    Dispositivos Largos >1200px (Desktop)
+
+    !sitio responsive Optimo: (5 media queries)
+    Dispositivos Pequeños <576px (Mobile)
+    Dispositivos Medianos >768px (Tablet)
+    Dispositivos Largos >992px (Notebook)
+    Dispositivos Extra-largos >1200px (Desktop)
+    Dispositivos Mega-Largos >1400px (Smart tv) 
+
+*/
+
+
+@media screen and (min-width: 768px) {
+    h1{
+        color: aqua;
+        border: 3px solid salmon;
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px ;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px){
+    h1{
+        color: green;
+        border: solid green 3px;
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+}

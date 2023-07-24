@@ -19,7 +19,7 @@
 
 .decoracion{
     background-color: red;
-    background-image: url('/imagenes.avanzadas/img/chita.jpg');
+    background-image: url('../img/chita.jpg');
     width: 800px;
     height: 600px;
 }

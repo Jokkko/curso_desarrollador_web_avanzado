@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap');
+
+/* variables css */
+:root{ /* selector raiz. (HTML) */
+  --fondo:#EDE4FF;
+  --fondo-secundario: #D7BBF5;
+  --disposicion: flex;
+  --tipografia: 'Poppins', sans-serif;
+}
+
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+body{
+  display: var(--disposicion);
+  font-family: var(--tipografia);
+  justify-content: center;
+
+}
+
+h1{
+  font-weight: 900;
+}
+
+h2,h3,h4,h5,h6{
+  font-weight: 600;
+}
+
+.margin-top-20{
+  margin-top: 20px;
+}
+
+.contenedor{
+  width: 700px;
+  padding: 25px;
+  background-color: var(--fondo);
+}
+
+.grupo{
+  background-color: var(--fondo-secundario);
+  margin: 20px;
+}
+
+/* ! PSEUDCLASE :first-child */
+.parrafos p:first-child{
+  color:aqua ;
+}
+
+/* ! PSEUDOCLASE :last-child */
+.parrafos p:last-child{
+  color:aquamarine ;
+}
+
+/* ! PSEUDOCLASE :first-of-type */
+.elementos p:first-of-type{
+  color:violet;
+}
+
+/* ! PSEUDOCLASE :last-of-type */
+.elementos p:last-of-type{
+  color:crimson;
+}
+
+/* ! PSEUDOCLASE :nth-child() */
+.lista li:nth-child(2n+1){
+  color: aliceblue;
+}
+
+.lista li:nth-child(2n){
+  color: deeppink;
+}
+
+/* ! PSEUDOCLASE :nth-last-child() */
+/* cuenta desde el ultimo hacia arriba */
+.lista li:nth-last-child(3n){
+  color: green;
+}
+
+/* ! PSEUDOCLASE :nth-of-type() */
+.lista-b p:nth-of-type(2){
+  background-color: black;
+  color: aquamarine;
+}
+
+/* ! PSEUDOCLASE :nth-last-of-type() */
+.lista-b p:nth-last-of-type(1){
+  background-color: violet;
+  color: yellowgreen;
+}

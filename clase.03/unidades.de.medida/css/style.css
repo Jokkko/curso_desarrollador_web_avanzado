@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/* Unidad de porcentaje (%) */
+.contenedor{
+    width: 100%; 
+    background-color: red;
+    height: 500px;
+}
+
+.hijo{
+    width: 50%;
+    background-color: royalblue;
+    height: 100%;
+}

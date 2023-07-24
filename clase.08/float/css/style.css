@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #a4a4a4;
+}
+
+.contenedor {
+    width: 75%;
+}
+
+.cuadrado {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(crimson, orange);
+    border: 1px solid black;
+    float: left;
+    margin:10px; /* margen sobre la caja que está flotada */
+}
+
+.cuadrado-right {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(blueviolet, orange);
+    border: 1px solid black;
+    float: right;
+    margin:10px; /* margen sobre la caja que está flotada */
+}
+
+
+.parrafo {
+   /*  margin-left: 10px; */ /* no se aplica sobre el parrafo */
+   clear: both; /* limpiando el float */
+}

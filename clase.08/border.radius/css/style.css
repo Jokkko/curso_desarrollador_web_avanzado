@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left; /* propiedad antigua de CSS para la construcción de interfaces web */
+    padding: 20px;
+    text-align: center;
+    color: yellow;
+}
+
+/* Random Everything */
+/* Increment Selection */
+
+.box--1 {
+    background-color: #509ece;
+    border-radius: 20px; /* shorthand */
+}
+
+.box--2 {
+    background-color: #1f39d1;
+    border-top-left-radius: 15px;
+}
+
+.box--3 {
+    background-color: #04a48b;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 5px;
+}
+
+.box--4 {
+    background-color: #9ac1ab;
+    /*          ar-izq/ab-der ar-der/ab-izq */
+    border-radius: 10px 40px;
+}
+
+.box--5 {
+    background-color: #f3239f;
+    /*       ar-izq ar-der/ab-izq ab-der */
+    border-radius: 10px 40px 100px;
+}
+
+.box--6 {
+    background-color: #884abd;
+    /*       ar-izq ar-der ab-izq ab-der */
+    border-radius: 10px 40px 100px 2px;
+}
+
+.box--7 {
+    background-color: #f9cee1;
+    /* border-radius: 100px; */
+    border-radius: 50%;
+}
+
+.box--8 {
+    background-color: #70dce8;
+    border-radius: 100px;
+}
+
+.box--9 {
+    background-color: #3f7494;
+    /*             all-x /  all-y  */
+    border-radius: 100px / 20px;
+}
+
+.box--10 {
+    background-color: #8fe0d5;
+    /*            ar-izq-x/ab-der-x / ar-der-y/ab-iz-y */
+    border-radius: 100px 20px / 20px 30px;
+}
+
+.box--11 {
+    background-color: #fa3dfc;
+    /*       ar-izq-x ar-der-x ab-izq-x ab-der-x / ar-izq-y ar-der-y ab-izq-y ab-der-  */
+    border-radius: 100px 45px 50px 100px / 50px 30px 33px 49px;
+}
+
+.box--12 {
+    /* https://9elements.github.io/fancy-border-radius/ */
+    background: linear-gradient(crimson, orange, gold);
+    border-radius: 60% 40% 33% 67% / 41% 44% 56% 59%;
+}
+
+.box--13 {
+    background-color: #2f4df5;
+}
+
+.box--14 {
+    background-color: #9f8534;
+}
+
+

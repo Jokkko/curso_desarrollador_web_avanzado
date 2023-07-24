@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    overflow: hidden;
+    margin: 40px auto;  
+}
+
+.spiderman{
+    width: 200px;
+    display: block; /* Por defecto son inline-block, entonces el margin no le afecta */
+    margin:auto; 
+    
+    animation: animar3  5s linear 0 infinite normal none running; /* Shorthand reducido (con 3 propiedades) */
+
+    /* Animation:[name] [duration] [tfunc] [delay] [itercount] [direction] [fill-mode] [play-state] shorthand */
+    animation-name: animar3; /* Identificador de la animacion */
+    animation-duration: 5s ; /* Duracion */
+    animation-timing-function: linear; /* ease, ease-in, ease-in-out, bezier  */
+    animation-delay: 1s; /* El tiempo que tarda para que arranque una vez cargada la pagina */
+    animation-iteration-count: infinite;/* default 1, cuantas veces se hace la animacion  */
+    animation-direction: normal;/* default normal, empieza en 0 va a 100 */
+    animation-fill-mode: none;/* default none, */
+    animation-play-state: running;/* default running, que pasa cuando la pagina se carga */
+
+
+}
+            /* El mismo identificador que ahi arriba (animar) */
+@keyframes animar {
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: red;
+        transform: rotateZ(10deg);
+    }
+}
+
+@keyframes animar2 {
+    0%,100% {   
+        transform: rotate(0deg); 
+        background-color: green;
+    }
+    25%,75%{
+        background-color: #eee;
+        transform: rotate(-10deg);
+    }
+    50% {
+        background-color: red;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes animar3 {
+    0% {   
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}

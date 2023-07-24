@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color: aqua;
+    width: 90%;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+.elemento1{  
+    background-color: chocolate;
+    width: 10rem;
+    height: 10rem;
+    color: #eee;
+    padding: .5rem auto;
+    
+    transition: .5s all;/* Le indica a transition que quiero estar pendiente de todas las propiedades */
+    transition-property: color, background-color, transform, border-radius;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+
+    transform: translate(0px,0px);
+    border-radius: initial;
+}
+
+.elemento2{  
+    background-color: chocolate;
+    width: 10rem;
+    height: 10rem;
+    color: #eee;
+    padding: .5rem auto;
+    
+    /* transition: .5s all; *//* Le indica a transition que quiero estar pendiente de todas las propiedades */
+    /* Shorthand de transition */
+    transition: color 1s cubic-bezier(.32,2,.23,-1.41),
+                background-color 1s linear 0s,
+                transform 1s linear 0s,
+                border-radius 1s linear 0s;
+/*     transition-property: color, background-color, transform, border-radius;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(.32,2,.23,-1.41);/* linear, ease, ease-in, ease-out */ 
+
+    transform: translate(0px,0px);
+    border-radius: initial;
+}
+
+.contenedor:hover .elemento1,
+.contenedor:hover .elemento2{
+    transform: translate(500px,0px);
+    color:black;
+    background-color: #eee;
+    border-radius: 20%;
+}
+
+/* Las animaciones requieren de recursos del sistema. Hay que cuidar los recursos de los sistemas, se debe conocer la renderizacion de elementos
+    usar (Transform y Opacity) usan pocos recursos
+
+    Proceso de renderizado
+    1 JS CSS
+    2 LAYOUT
+    3 PAINTING
+    4 COMPOSITE  - 
+    
+    1 Se encarga de dar el orden adecuado a las capas del navegador, hace referencia a elementos que no usa paint ni layout
+    Combina y dibuja las capas en pantalla
+    Si se modifica una propiedad en la que no requiere diseño (layout) ni pintura (painting) el navegador omite y continua la composicion
+    Esta version final es la mas economica y la mas ideal para puntos de alta presion del ciclo de la vida de la app como animaciones o desplazamientos
+
+    2 painting - Proceso de rellenar pixeles dibujar textos colores  imagenes bordes sombras etc
+    Si cambiamos una propiedad de paint como una imagen color de texto sombras es decir una que no afecta el diseño el navegador omite el diseño pero realiza la pintura igual
+
+    3 layout el proceso del cual el navegador decifra la informacion geometrica de los elementos su tamañ y ubicacion en la pagina, width height
+
+    si modifico una propiedad del layout dicha porpiedad modificara la geometria de la pagina el navegador debera verificar  todos los otros elementos y redistrinuitlos
+    en la pagina, las afectadas deberan volver a pintar y los elementos pintados finales  deberan a componer en conjunto
+
+    */
+
+    /*  PROCURAR PROPIEDADES QUE SOLO ACTUEN O MODIFIQUEN COMPOSITE
+        evitar usar animaciones simultaneas
+        procurar usar transform y opacity    
+    */

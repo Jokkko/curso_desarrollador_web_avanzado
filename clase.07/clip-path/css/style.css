@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.clip-path{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(crimson,orange);
+    /* radio at X Y */
+    clip-path: circle(50%); /* 200px */
+    clip-path: circle(50% at 0% 100% );
+}
+

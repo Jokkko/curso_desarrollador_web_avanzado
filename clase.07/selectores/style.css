@@ -1,0 +1,57 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+h2{
+  color: deeppink;
+}
+
+.borde{
+  border: 0.2rem solid black;
+}
+
+#section{
+  border: .2rem solid blueviolet;
+}
+
+/* Selector de atributo */
+[href]{
+  text-decoration: none;
+}
+
+[href="https://google.com.ar"]{
+  color: darkgreen;
+}
+
+[class]{
+  background-color: #ddd;
+}
+
+/* Que empiecen */
+[href^=https]{
+  color:olivedrab;
+}
+
+/* Que terminen */
+[href$=".com.ar"]{
+  color:olivedrab;
+}
+
+/* De hermano adyacente (selector + selector) */
+/* Selecciona al elemento que sigue del elemento */
+
+/* General de hermanos (selector ~ selector )  alt+126*/
+/* Selecciona a todos los elementos que siguen despues del primer elemento */
+
+/* Selector universal (*) */
+/* Selecciona a todos los elementos disponibles */
+
+/* Combinador de hijo (selector > selector) */
+/* Permite seleccionar elementos que son directamente hijos de otros */
+.contenedor nav > a{
+  background-color: wheat;
+} 
+/* Combinador de descendientes (selector selector) */
+/* selecciona elementos que sean descendientes de otro */

@@ -1,0 +1,57 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 20px;
+}
+
+.contenedor{
+  margin: 1em; 
+  background-color: #0E2954;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  gap: .5rem; 
+
+  /* manejo horizontal */
+  justify-content: center; /* controla las celdas
+  default: start | center, end , space-between, space-around, space-evenly */
+  justify-items: stretch; /* controla los elementos de las celdas
+  default: stretch | center, start, end */
+
+  /* manejo vertical */
+  align-content: center;/* Controla las celdas
+  default: start | center, end , space-between, space-around, space-evenly */
+  align-items: stretch;/* Controla los elementos de las celdas
+  default: stretch | center, start, end */
+
+  height: 600px; /* Para trabajaar verticalmente deberia tener un alto fijo */
+}
+
+.elemento{
+  background-color: #84A7A1;
+  text-align: center;
+}
+
+.elm1{
+  justify-self: start; /* Horizontal */
+  align-self: start; /* Vertical */
+}
+
+.elm2{
+  justify-self: end; /* Horizontal */
+  align-self: start; /* Vertical */
+}
+
+.elm3{
+  justify-self: start; /* Horizontal */
+  align-self: start; /* Vertical */
+}
+
+.elm4{
+  justify-self: end; /* Horizontal */
+  align-self: start; /* Vertical */
+}

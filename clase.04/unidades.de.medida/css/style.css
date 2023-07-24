@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 50px;
+}
+body{
+    font-size: 20px;
+}
+
+/* ! EM (em) */
+/* Es relativa a la altura de la M mayuscula EM. Es relativa a su etiqueta contenedora */
+
+.opinion{
+    font-size: 2em; /* papa directo body => 16px => 16px * 2 => 32px */
+    padding: 1em; /* .opinion (font-size) => 32 px => 32 * 1 => 32px */
+    margin: .5em 1em 2em 3em;
+    box-shadow: 1em 1em 1em black;
+}
+
+/* ! REM (rem) */
+/* REM es relativa a la etiqueta ROOT, la html*/
+
+h2.titulo{
+    font-size: 1rem; /* Html por default tiene 16px, => 16px * 1 = 16px  */ /* Por el cambio tiene 30px html osea 30px*1 */
+    margin: 2rem;
+}
+
+p.parrafo{
+    font-size: 1.5rem;
+}
+
+/* Porcentaje y viewport */
+
+/* Porcentaje esta vinculado al elemento padre que lo contiene */
+
+/* 
+.contenedor{ .CONTENEDOR MIRA EL ANCHO DE BODY 
+    background-color: tomato;
+    width: 50%;
+    height: 100px; 
+    } 
+*/
+
+/* 
+.hijo{   .HIJO MIRA EL ANCHO DE .CONTENEDOR 
+    background-color: silver;
+    width: 50%;
+    height: 100px;
+} 
+*/
+
+/* Viewport */
+.contenedor{
+    background-color: tomato;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hijo{
+    background-color: silver;
+    width: 50vw;
+    height: 50vh;
+}
